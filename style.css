@@ -29,3 +29,10 @@ main {
   flex-direction: column;
   gap: 16px;
 }
+
+.top-div {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  background-color: #24232c;
+}
