@@ -43,3 +43,11 @@ main {
   font-weight: bold;
   color: #e6e5ea;
 }
+
+.bottom-div {
+  padding: 16px;
+  background-color: #24232c;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
