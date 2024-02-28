@@ -23,3 +23,9 @@ h1 {
   color: #817d92;
   margin-top: 48px;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
