@@ -11,8 +11,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 16px;
   gap: 16px;
   background-image: linear-gradient(to bottom, #14131b, #08070b);
 }
@@ -21,7 +21,6 @@ h1 {
   font-size: 16px;
   font-weight: bold;
   color: #817d92;
-  margin-top: 48px;
 }
 
 main {
@@ -36,6 +35,14 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: #24232c;
+}
+
+.copy {
+  cursor: pointer;
+}
+
+.copy :hover {
+  fill: #ffffff;
 }
 
 .password {
@@ -126,6 +133,7 @@ input {
   width: 20px;
   height: 20px;
   border: solid 2px #e6e5ea;
+  cursor: pointer;
 }
 
 .strength-div {
@@ -178,4 +186,69 @@ button {
   font-size: 16px;
   font-weight: bold;
   color: #24232c;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  border: solid 2px #a4ffaf;
+  background-color: #24232c;
+  color: #a4ffaf;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    gap: 31px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  main {
+    gap: 24px;
+  }
+
+  .top-div {
+    padding: 19px;
+  }
+
+  .password {
+    font-size: 32px;
+  }
+
+  .length-text {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .include {
+    gap: 24px;
+  }
+
+  .strength-div {
+    padding: 21px 31.5px 20px 32px;
+    gap: 150px;
+  }
+
+  .strength {
+    font-size: 18px;
+  }
+
+  .strength-text {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .strength-div {
+    gap: 160px;
+  }
 }
