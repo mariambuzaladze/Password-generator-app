@@ -6,3 +6,11 @@
   box-sizing: border-box;
   font-family: "JetBrains mono";
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-image: linear-gradient(to bottom, #14131b, #08070b);
+}
