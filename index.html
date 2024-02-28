@@ -12,5 +12,54 @@
     <header>
       <h1>Password Generator</h1>
     </header>
+
+    <main>
+      <div class="top-div">
+        <p class="password">PTx1f5DaFX</p>
+        <img src="./images/icon-copy.svg" alt="copy icon" />
+      </div>
+
+      <div class="bottom-div">
+        <div class="input">
+          <label for="length">Character Length</label>
+          <p></p>
+          <input type="range" id="length" />
+        </div>
+
+        <div class="includes">
+          <div class="include">
+            <div class="check uppercase"></div>
+            <p class="text">Include Uppercase Letters</p>
+          </div>
+
+          <div class="include">
+            <div class="check lowercase"></div>
+            <p class="text">Include Lowercase Letters</p>
+          </div>
+
+          <div class="include">
+            <div class="check number"></div>
+            <p class="text">Include Numbers</p>
+          </div>
+
+          <div class="include">
+            <div class="check symbols"></div>
+            <p class="text">Include Symbols</p>
+          </div>
+        </div>
+
+        <div class="strength-div">
+          <p class="strength">STRENGTH</p>
+          <p class="strength-text">MEDIUM</p>
+
+          <div class="strengths one"></div>
+          <div class="strengths two"></div>
+          <div class="strengths three"></div>
+          <div class="strengths four"></div>
+        </div>
+
+        <button>GENERATE</button>
+      </div>
+    </main>
   </body>
 </html>
