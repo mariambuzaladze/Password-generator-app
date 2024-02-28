@@ -103,3 +103,27 @@ input {
   border: solid 2px #a4ffaf;
   background-color: #18171f;
 }
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.includes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.include {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  border: solid 2px #e6e5ea;
+}
