@@ -127,3 +127,55 @@ input {
   height: 20px;
   border: solid 2px #e6e5ea;
 }
+
+.strength-div {
+  padding: 15px;
+  background-color: #18171f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.strength {
+  font-size: 16px;
+  font-weight: bold;
+  color: #817d92;
+}
+
+.strength-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e6e5ea;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.divs {
+  display: flex;
+  gap: 8px;
+}
+
+.strengths {
+  width: 10px;
+  height: 28px;
+  border: solid 2px #e6e5ea;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+button {
+  background-color: #a4ffaf;
+  border: none;
+  padding: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #24232c;
+}
