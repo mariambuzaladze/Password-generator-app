@@ -129,6 +129,12 @@ input {
   align-items: center;
 }
 
+.include .active {
+  background-image: url(./images/icon-check.svg);
+  background-size: cover;
+  background-color: #a4ffaf;
+  border-color: #a4ffaf;
+}
 .check {
   width: 20px;
   height: 20px;
