@@ -12,24 +12,21 @@ input.addEventListener("input", function () {
 });
 
 const includeDivs = document.getElementsByClassName("check");
+const checkboxes = document.getElementsByClassName("checkbox-input");
 let clicked = false;
 let clickedDivs = [];
 
-for (let i = 0; i < includeDivs.length; i++) {
-  includeDivs[i].addEventListener("click", function () {
-    if (!clicked) {
+for (let i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener("input", function () {
+    if (checkboxes[i].checked) {
       includeDivs[i].classList.add("active");
       clickedDivs.push(i);
-      clicked = true;
     } else {
       includeDivs[i].classList.remove("active");
-
       let indexToRemove = clickedDivs.indexOf(i);
       clickedDivs = clickedDivs
         .slice(0, indexToRemove)
         .concat(clickedDivs.slice(indexToRemove + 1));
-
-      clicked = false;
     }
 
     console.log(clickedDivs);
@@ -37,6 +34,8 @@ for (let i = 0; i < includeDivs.length; i++) {
 }
 
 const passwordDisplay = document.getElementsByClassName("password")[0];
+const strength = document.getElementsByClassName("strengths");
+const strengthText = document.getElementsByClassName("strength-text")[0];
 
 function generatePassword() {
   const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -70,4 +69,18 @@ function generatePassword() {
   }
 
   passwordDisplay.textContent = password;
+
+  for (let i = 0; i < clickedDivs.length; i++) {
+    strength[i].classList.add("colored");
+  }
+
+  if (clickedDivs.length === 1) {
+    strengthText.textContent = "WEAK";
+  } else if (clickedDivs.length === 2) {
+    strengthText.textContent = "MEDIUM";
+  } else if (clickedDivs.length === 3) {
+    strengthText.textContent = "STRONG";
+  } else {
+    strengthText.textContent = "VERY STRONG";
+  }
 }
