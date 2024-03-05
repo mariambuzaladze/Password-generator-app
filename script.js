@@ -28,8 +28,6 @@ for (let i = 0; i < checkboxes.length; i++) {
         .slice(0, indexToRemove)
         .concat(clickedDivs.slice(indexToRemove + 1));
     }
-
-    console.log(clickedDivs);
   });
 }
 
@@ -84,3 +82,14 @@ function generatePassword() {
     strengthText.textContent = "VERY STRONG";
   }
 }
+
+const copy = document.getElementsByClassName("copy")[0];
+
+copy.addEventListener("click", async function () {
+  try {
+    await navigator.clipboard.writeText(passwordDisplay.textContent);
+    console.log("Text successfully copied to clipboard");
+  } catch (err) {
+    console.error("Unable to copy text to clipboard", err);
+  }
+});
