@@ -17,3 +17,10 @@
 **Set Password Length**: Use the slider or input box to set the desired password length.  
 **Select Character Types**: Check the boxes to include lowercase letters, uppercase letters, numbers, and/or symbols.  
 **Generate Password**: Click the "Generate Password" button to create a secure password based on your selections.  
+
+
+## Contact
+**Feel free to reach out if you have any questions or feedback:**
+
+**LinkedIn**: https://www.linkedin.com/in/mariam-buzaladze-aa22b6297/  
+**Email**: mariambuzaladze10@gmail.com
